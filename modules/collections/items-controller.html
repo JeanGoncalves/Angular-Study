@@ -1,0 +1,20 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Angular Study - Collections</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+        <script src="./module.js"></script>
+        <script src="./items-controller.js"></script>
+    </head>
+    <body ng-app="app">
+        <!-- Other examples to be inserted here. -->
+
+        <div ng-controller="ItemsController">
+            <div ng-repeat="item in items">
+                {{ $index + 1 }}. {{ item.name }}
+            </div>
+        </div>
+    </body>
+</html>

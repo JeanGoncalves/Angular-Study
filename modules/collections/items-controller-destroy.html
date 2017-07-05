@@ -1,0 +1,28 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Angular Study - Collections</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+        <script src="./module.js"></script>
+        <script src="./items-controller-destroy.js"></script>
+    </head>
+    <body ng-app="app">
+        <!-- Other examples to be inserted here. -->
+
+        <div ng-controller="ItemsController">
+            <h4 ng-pluralize count="items.length" when="{'one': '1 item', 'other': '{} items'}"></h4>
+            <table class="table table-condensed">
+                <tr ng-repeat="item in items">
+                    <td ng-bind="item.name"></td>
+                    <td>
+                        <button class="btn btn-xs btn-default" ng-click="destroy(item)">
+                        destroy
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
