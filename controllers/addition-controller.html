@@ -1,0 +1,18 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Angular Study - Controllers</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+        <script src="./module.js"></script>
+        <script src="./addition-controller.js"></script>
+    </head>
+    <body ng-app="app">
+        <!-- Other examples to be inserted here. -->
+        <p ng-controller="AdditionController">
+            <select ng-model="operand1" ng-options="x for x in options"></select>
+            + <select ng-model="operand2" ng-options="x for x in options"></select>
+            = {{ add() }}
+        </p>
+    </body>
+</html>
