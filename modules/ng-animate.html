@@ -1,0 +1,23 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Angular Study - Modules</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./ng-animate.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
+        <script src="./ng-animate-module.js"></script>
+    </head>
+    <body ng-app="app">
+        <!-- Other examples to be inserted here. -->
+
+        <div>
+            <input type="checkbox" ng-model="showMessage">
+            Check the box to show the message
+            <h2 ng-show="showMessage">
+            The secret message.
+            </h2>
+        </div>
+    </body>
+</html>
