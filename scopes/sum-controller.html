@@ -1,0 +1,21 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Angular Study - Scopes</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+        <script src="./module.js"></script>
+        <script src="./sum-watch-controller.js"></script>
+    </head>
+    <body ng-app="app">
+        <!-- Other examples to be inserted here. -->
+
+        <div>
+            <p ng-controller="SumController">
+                <select ng-model="newValue" ng-options="n for n in [1,2,3]"></select>
+                <input type="button" value="Add" ng-click="add()">
+                The sum of {{ values }} is {{ sum }}.
+            </p>
+        </div>
+    </body>
+</html>
