@@ -1,0 +1,23 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Angular Study - Service</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+        <script src="./module.js"></script>
+        <script src="./score-controller.js"></script>
+        <script src="./score-value.js"></script>
+    </head>
+    <body ng-app="app">
+        <!-- Other examples to be inserted here. -->
+
+        <div>
+            <p ng-controller="ScoreController">
+                Score: {{ score }}
+            </p>
+            <p ng-controller="ScoreController">
+                <button ng-click="increment()">Increment</button>
+            </p>
+        </div>
+    </body>
+</html>
